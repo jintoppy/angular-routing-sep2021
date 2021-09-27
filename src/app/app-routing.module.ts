@@ -16,7 +16,7 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'user-details/:actor',
+    path: 'user-details/:userId',
     component: UserDetailsComponent
   },
   {

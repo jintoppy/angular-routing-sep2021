@@ -1,4 +1,8 @@
-Details page of {{actorName}}
-<!-- <div *ngIf="actorName">
-    Details page of {{actorName}}
-</div> -->
+<div *ngIf="user">
+    <h2>
+        Details page of {{user.name.firstname}} {{user.name.lastname}}
+    </h2>
+    <p>
+        Email: {{user.email}}
+    </p>
+</div>
