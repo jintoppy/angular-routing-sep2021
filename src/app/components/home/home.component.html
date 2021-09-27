@@ -1,8 +1,8 @@
 <div>
     <ul>
         <li *ngFor="let user of users">
-            <a [routerLink]="['/user-details', user.name]">
-                {{user.name}}
+            <a [routerLink]="['/user-details', user.id]">
+                {{user.name.firstname}} {{user.name.lastname}}
             </a>            
         </li>
     </ul>
