@@ -7,11 +7,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
+  actorName = '';
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.params);
+    this.actorName = this.route.snapshot.params.actor;
   }
 
 }
