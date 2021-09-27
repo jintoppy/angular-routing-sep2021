@@ -1,4 +1,16 @@
 <p>about works!</p>
+<ul>
+    <li>
+        <a routerLink="/about/actor">Actor</a>
+    </li>
+    <li>
+        <a routerLink="/about/student">Student</a>
+    </li>
+</ul>
 <button (click)="redirectToHomePage()">
     Redirect to Home Page
 </button>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

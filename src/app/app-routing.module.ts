@@ -5,11 +5,23 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { ActorComponent } from './components/actor/actor.component';
+import { StudentComponent } from './components/student/student.component';
 
 const routes: Routes = [  
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    children: [
+      {
+        path: 'actor',
+        component: ActorComponent
+      },
+      {
+        path: 'student',
+        component: StudentComponent
+      }
+    ]
   },
   {
     path: 'contactus',
