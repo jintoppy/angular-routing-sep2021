@@ -28,7 +28,7 @@ export class UserDetailsComponent implements OnInit {
     //       this.user = user;
     //     });
     // })
-
+    
     this.route.params
       .pipe(
         switchMap(({userId}) => this.service.getUser(userId))
