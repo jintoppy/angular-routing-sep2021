@@ -9,6 +9,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  users = [
+    { name: 'ajith'},
+    { name: 'rajnikanth'},
+    { name: 'vijay'},
+    { name: 'kamal'}
+  ]
+
   ngOnInit(): void {
   }
 

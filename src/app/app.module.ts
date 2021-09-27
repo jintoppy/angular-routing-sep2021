@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 
 
@@ -15,7 +16,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

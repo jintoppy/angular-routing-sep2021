@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 const routes: Routes = [  
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'contactus',
     component: ContactComponent
+  },
+  {
+    path: 'user-details/:actor',
+    component: UserDetailsComponent
   },
   {
     path: '',
