@@ -1,0 +1,19 @@
+header {
+    background-color: bisque;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar {
+    background-color: aqua;
+    padding: 10px;
+    border-right: 1px solid gray;    
+}
+
+.content {
+    padding: 10px;
+}
