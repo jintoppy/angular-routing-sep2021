@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
-const routes: Routes = [
+const routes: Routes = [  
   {
     path: 'about',
     component: AboutComponent
@@ -11,6 +13,15 @@ const routes: Routes = [
   {
     path: 'contactus',
     component: ContactComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 
